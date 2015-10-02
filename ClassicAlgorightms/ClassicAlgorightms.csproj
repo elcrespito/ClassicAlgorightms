@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B708B90C-6990-495F-BB4D-8DF6368005DB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassicAlgorightms</RootNamespace>
+    <AssemblyName>ClassicAlgorightms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Compares\SortCompare.cs" />
+    <Compile Include="Digraphs\BreadthFirstDirectedPaths.cs" />
+    <Compile Include="Digraphs\DepthFirstDirectedPath.cs" />
+    <Compile Include="Digraphs\Digraph.cs" />
+    <Compile Include="Digraphs\DirectDfs.cs" />
+    <Compile Include="Digraphs\DirectedCycle.cs" />
+    <Compile Include="DirectEdgeGraphs\DijkstraSP.cs" />
+    <Compile Include="DirectEdgeGraphs\DirectedEdge.cs" />
+    <Compile Include="DirectEdgeGraphs\EdgeWeightedDigraph.cs" />
+    <Compile Include="DirectEdgeGraphs\SP.cs" />
+    <Compile Include="Graphs\BreadthFirstPaths.cs" />
+    <Compile Include="Graphs\CC.cs" />
+    <Compile Include="Graphs\DepthFirstSearch.cs" />
+    <Compile Include="Graphs\Graph.cs" />
+    <Compile Include="Graphs\DepthFirstPath.cs" />
+    <Compile Include="Graphs\public class SymbolGraph.cs" />
+    <Compile Include="Mods\Edge.cs" />
+    <Compile Include="Mods\EdgeWeightedGraph.cs" />
+    <Compile Include="Mods\LazyPrimMST.cs" />
+    <Compile Include="Mods\MST.cs" />
+    <Compile Include="Mods\PrimMST.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchTable\BinarySearchST.cs" />
+    <Compile Include="SearchTable\BST.cs" />
+    <Compile Include="SearchTable\Hashing.cs" />
+    <Compile Include="SearchTable\LinearProbingHashingST.cs" />
+    <Compile Include="SearchTable\SeparateChainingHashST.cs" />
+    <Compile Include="Sorting\HeapSorting.cs" />
+    <Compile Include="Sorting\IndexMinPq.cs" />
+    <Compile Include="Sorting\Insertion.cs" />
+    <Compile Include="Sorting\MaxPQ.cs" />
+    <Compile Include="Sorting\MergeSorting.cs" />
+    <Compile Include="Sorting\MinPq.cs" />
+    <Compile Include="Sorting\QuickSorting.cs" />
+    <Compile Include="Sorting\Selection.cs" />
+    <Compile Include="Sorting\ShellInArray.cs" />
+    <Compile Include="Sorting\ShellSorting.cs" />
+    <Compile Include="Sorting\Sorting.cs" />
+    <Compile Include="SearchTable\ST.cs" />
+    <Compile Include="Strings\BTrie.cs" />
+    <Compile Include="Strings\KMP.cs" />
+    <Compile Include="Strings\LsdSorting.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
